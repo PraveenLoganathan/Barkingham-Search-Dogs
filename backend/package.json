@@ -1,0 +1,19 @@
+{
+  "name": "backend",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "connect-mongo": "^4.6.0",
+    "cookie-parser": "~1.4.4",
+    "cookieparser": "^0.1.0",
+    "debug": "~2.6.9",
+    "dot-env": "^0.0.1",
+    "dotenv": "^16.0.1",
+    "express": "~4.16.1",
+    "mongoose": "^6.5.3",
+    "morgan": "~1.9.1"
+  }
+}

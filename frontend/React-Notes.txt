@@ -1,0 +1,29 @@
+
+Thought Process and Best Practice behind building this project:
+
+
+- Break components as much as possible example button, input components but make sure its reusable.
+
+Use of the classnames library in conjunction with (for example) a buttonClassNames object that allows for the easy management of the button's CSS classes. This allows for the following benefits:
+
+- Code Reusability: The buttonClassNames object allows for the easy reuse of button styles throughout the application.
+- Modularity: The different button states (base, hover, active, disabled) are separated into individual properties in the buttonClassNames object, making it easy to update or change them without affecting the rest of the code.
+- Dynamic styling: The classnames library allows for dynamic styling based on the button's state (enabled/disabled, hover state, active state).
+- Maintainability: This setup makes it easy to manage and update the styling of the button component, which improves maintainability in the long run.
+- High performance: all styling classes are defined in one place and no extra css is loaded only the button specific css is loaded.
+- Better control over styles: Styles are defined in the codebase, which allows for better control over when and how styles are applied.
+- Better collaboration: Styles defined in codebase can easily be shared, reviewed, and discussed by the team, which improves collaboration and knowledge sharing.
+
+Use of a reducer function (example Login and Register page) can be beneficial because it allows for a more centralised and structured way of managing state. A few advantages of using a reducer function over the useState hook include:
+
+- Scalability: When an application gets more complex, it will require state that is related and needs to be updated in a specific order, this order can be maintained using a reducer function.
+- Predictable state updates: By using the reducer function, it is clear which action will result in which state change, and how that change will be made.
+- Easy debugging: Because reducer functions work in a predictable way, it is easy to understand what caused an issue and how to fix it.
+- Easy testing: Because the state updates and actions are separated, it's easier to write unit tests for state updates.
+- Easy version control: Because the state and state updates are separate, it's easier to keep track of changes made to state over time, and to revert back to a previous version if needed.
+
+- State, props are defined at the top most level before writing any functions.
+
+- Functions are grouped together just before return statement that renders HTML.
+
+- Break lengthy elements into smaller lines, structure them. Focus on a consistent theme which help in easier reading. Add sufficient comments.
